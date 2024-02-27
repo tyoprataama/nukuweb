@@ -18,7 +18,7 @@ const Footer: FC<indexProps> = ({}) => {
     },
   ];
   return (
-    <footer className="grid md:grid-cols-4 grid-cols-1 bg-slate-50 border-t border-gray-300 justify-between p-6 gap-5">
+    <footer className="grid md:grid-cols-4 grid-cols-1 bg-slate-50  justify-between p-6 gap-5">
       <div>
         <div className="footer-logo"></div>{" "}
         <p className="text-medium text-sky-600 font-semibold">nukuweb</p>
@@ -63,7 +63,7 @@ const Footer: FC<indexProps> = ({}) => {
         ))}
       </div>
 
-      <div className="text-gray-500">
+      <div className="text-gray-500 pt-2">
         <div className="inline-flex items-center gap-3">
           <div>
             <CiLocationOn className="w-6 h-6" />
