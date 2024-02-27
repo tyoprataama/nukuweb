@@ -18,11 +18,11 @@ const Footer: FC<indexProps> = ({}) => {
     },
   ];
   return (
-    <footer className="grid md:grid-cols-4 grid-cols-1 bg-slate-50  justify-between p-6 gap-5">
+    <footer className="grid md:grid-cols-4 grid-cols-1 bg-slate-50 dark:bg-slate-900  justify-between p-6 gap-5 rounded-t-2xl">
       <div>
         <div className="footer-logo"></div>{" "}
         <p className="text-medium text-sky-600 font-semibold">nukuweb</p>
-        <p className="text-gray-500 text-sm pt-2 font-light">
+        <p className="text-gray-500 dark:text-gray-400 text-sm pt-2 font-light">
           Buat custom website sesuai kebutuhan anda bersama kami.
         </p>
       </div>
@@ -30,12 +30,14 @@ const Footer: FC<indexProps> = ({}) => {
       <div>
         {sections2.map((section, index) => (
           <div key={index}>
-            <h6 className="font-bold text-gray-600 pt-2">{section.title}</h6>
+            <h6 className="font-bold text-gray-600 dark:text-gray-300 pt-2">
+              {section.title}
+            </h6>
             <ul>
               {section.items.map((item, i) => (
                 <li
                   key={i}
-                  className="py-2 text-gray-500 hover:text-gray-600 hover:font-medium cursor-pointer"
+                  className="py-2 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:font-medium cursor-pointer"
                 >
                   {item}
                 </li>
@@ -48,12 +50,14 @@ const Footer: FC<indexProps> = ({}) => {
       <div>
         {sections.map((section, index) => (
           <div key={index}>
-            <h6 className="font-bold text-gray-600  pt-2">{section.title}</h6>
+            <h6 className="font-bold text-gray-600 dark:text-gray-300 pt-2">
+              {section.title}
+            </h6>
             <ul>
               {section.items.map((item, i) => (
                 <li
                   key={i}
-                  className="py-2 text-gray-500 hover:text-gray-600 hover:font-medium cursor-pointer"
+                  className="py-2 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:font-medium cursor-pointer"
                 >
                   {item}
                 </li>
@@ -63,7 +67,7 @@ const Footer: FC<indexProps> = ({}) => {
         ))}
       </div>
 
-      <div className="text-gray-500 pt-2">
+      <div className="text-gray-500 dark:text-gray-400 pt-2">
         <div className="inline-flex items-center gap-3">
           <div>
             <CiLocationOn className="w-6 h-6" />
