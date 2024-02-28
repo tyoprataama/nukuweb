@@ -1,9 +1,13 @@
+import Hero from "@/components/layout/Hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-2">
-      <h1 className="text-2xl font-semibold">This is main</h1>
+    <main className="grid min-h-screen md:grid-cols-2">
+      <div className="bg-slate-500 md:p-6 p-3">
+        <h1 className="text-2xl font-semibold">This is main</h1>
+      </div>
+      <Hero />
     </main>
   );
 }
