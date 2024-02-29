@@ -36,7 +36,7 @@ const invoices = [
   },
 ];
 
-export function TableEl() {
+export const TableEl = () => {
   return (
     <Table className="bg-gray-100 dark:bg-purple-600 rounded-lg">
       <TableCaption>A list of your recent invoices.</TableCaption>
