@@ -1,63 +1,72 @@
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Table,
   TableBody,
   TableCaption,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { FaStar } from "react-icons/fa";
 
-const invoices = [
+const items = [
   {
-    invoice: "INV001",
-    paymentStatus: "Paid",
-    totalAmount: "$250.00",
-    paymentMethod: "Credit Card",
+    userImage: "https://i.ibb.co/h7ndHSG/review-user-1.png",
+    userName: "Fira",
+    userRatings: "4.9",
+    userReviews: "Pelayanan sangat cepat dan admin ganteng.",
   },
   {
-    invoice: "INV002",
-    paymentStatus: "Pending",
-    totalAmount: "$150.00",
-    paymentMethod: "PayPal",
+    userImage: "https://i.ibb.co/P9s2QJP/review-user-2.png",
+    userName: "Nazella",
+    userRatings: "4.7",
+    userReviews: "Overall sangat mengesankan, goodjob!",
   },
   {
-    invoice: "INV003",
-    paymentStatus: "Unpaid",
-    totalAmount: "$350.00",
-    paymentMethod: "Bank Transfer",
+    userImage: "https://i.ibb.co/zRmdTx4/review-user-3.png",
+    userName: "Reni",
+    userRatings: "4.5",
+    userReviews: "Baguss, ketika minta revisi langsung tanggap.",
   },
   {
-    invoice: "INV004",
-    paymentStatus: "Paid",
-    totalAmount: "$450.00",
-    paymentMethod: "Credit Card",
+    userImage: "https://i.ibb.co/yPSNr3G/review-user-4.png",
+    userName: "Lintang",
+    userRatings: "4.9",
+    userReviews: "Cocok untuk membantu tugas kuliah saya.",
   },
 ];
 
 export const TableEl = () => {
   return (
-    <Table className="bg-gray-100 dark:bg-purple-600 rounded-lg">
-      <TableCaption>A list of your recent invoices.</TableCaption>
+    <Table className="bg-gray-100 dark:bg-slate-800 text-foreground rounded-lg">
+      <TableCaption>List of happy customer.</TableCaption>
       <TableHeader>
         <TableRow>
-          <TableHead className="w-[100px]">Invoice</TableHead>
-          <TableHead>Status</TableHead>
-          <TableHead>Method</TableHead>
-          <TableHead>Amount</TableHead>
+          <TableHead className="w-[100px]">Profile</TableHead>
+          <TableHead>Nama</TableHead>
+          <TableHead>Ulasan</TableHead>
+          <TableHead>Ratings</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
-        {invoices.map((invoice) => (
-          <TableRow key={invoice.invoice}>
-            <TableCell className="font-medium">{invoice.invoice}</TableCell>
-            <TableCell>{invoice.paymentStatus}</TableCell>
-            <TableCell>{invoice.paymentMethod}</TableCell>
-            <TableCell>{invoice.totalAmount}</TableCell>
+        {items.map((item, i) => (
+          <TableRow key={i + 1}>
+            <TableCell>
+              <Avatar className="w-[50px] h-[50px]">
+                <AvatarImage src={item.userImage} />
+                <AvatarFallback className="bg-blue-200">V</AvatarFallback>
+              </Avatar>
+            </TableCell>
+            <TableCell>{item.userName}</TableCell>
+            <TableCell>{item.userReviews}</TableCell>
+            <TableCell className="flex items-center gap-1">
+              <FaStar className="w-4 h-4 text-yellow-400" />
+              {item.userRatings}/5
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>
     </Table>
   );
-}
+};
