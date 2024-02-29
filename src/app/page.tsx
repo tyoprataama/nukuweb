@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <main className="grid lg:grid-cols-2">
-      <div className="flex xl:items-start lg:text-start xl:text-start text-center flex-col xl:px-9 xl:py-[100px] lg:px-9 lg:py-[100px] md:px-[120px] px-[20px] py-[50px] gap-4">
-        <h1 className="text-4xl lg:text-5xl xl:text-5xl font-bold leading-tight xl:w-[60%]">
+      <div className="flex xl:items-start lg:text-start xl:text-start text-center flex-col xl:px-9 xl:py-[100px] lg:px-9 lg:py-[100px] md:px-[120px] px-[20px] py-[50px] lg:gap-5 gap-4">
+        <h1 className="text-4xl lg:text-5xl xl:text-5xl font-bold lg:leading-snug leading-tight xl:w-[60%]">
           <span className="text-blue-500">Digitalisasi</span>
           <br />
           <span>Bisnis Anda</span>
@@ -24,7 +24,7 @@ export default function Home() {
             Lihat lebih lanjut
           </Button>
         </div>
-        <div className="welcome-code xl:mt-5"></div>
+        <div className="welcome-code xl:mt-5 w-full md:h-[300px] h-[400px]"></div>
       </div>
       <Hero />
     </main>

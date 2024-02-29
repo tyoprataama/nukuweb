@@ -101,7 +101,7 @@
 .welcome-code {
   background-image: url(../../public/welcomeCode.svg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
-  width: 100%;
-  height: 400px;
+
 }
