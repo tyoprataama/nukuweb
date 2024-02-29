@@ -5,7 +5,7 @@ import { FC } from "react";
 interface indexProps {}
 const Hero: FC<indexProps> = ({}) => {
   return (
-    <div className="grid lg:grid-cols-[70%,30%] md:grid-cols-2 overflow-hidden">
+    <div className="xl:grid-cols-[70%,30%] md:grid-cols-1 overflow-hidden md:grid hidden">
       <MainBar />
       <SideBar />
     </div>

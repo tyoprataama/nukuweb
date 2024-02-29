@@ -28,7 +28,7 @@ export const BadgeEl: FC<indexProps> = () => {
     },
   ];
   return (
-    <div className="flex flex-wrap gap-3 md:pt-7 pt-4">
+    <div className="flex flex-wrap md:gap-2 gap-1 md:pt-7 pt-4 md:text-medium text-xs">
       {El.map((item, key) => (
         <Badge key={key} variant={"outline"} className={item.class}>
           {item.items}

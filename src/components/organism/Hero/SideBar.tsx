@@ -7,7 +7,7 @@ import { Point } from "../Point";
 interface indexProps {}
 export const SideBar: FC<indexProps> = ({}) => {
   return (
-    <div className="md:py-6 py-3 md:block hidden">
+    <div className="md:py-6 xl:block hidden py-3">
       <Point />
       <ScrollEl />
       <div className="p-6 w-[400px] flex flex-col gap-3 rounded-lg bg-slate-100 dark:bg-slate-800 dark:text-foreground mt-5 items-start">
