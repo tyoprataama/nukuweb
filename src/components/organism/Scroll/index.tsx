@@ -51,7 +51,7 @@ export const items: indexProps[] = [
 
 export function ScrollEl() {
   return (
-    <ScrollArea className="w-96 whitespace-nowrap rounded-md border">
+    <ScrollArea className="bg-gray-200 dark:bg-slate-700 w-96 whitespace-nowrap rounded-md border">
       <div className="flex w-max space-x-4 p-0">
         {items.map((item) => (
           <figure key={item.descBot} className="shrink-0">

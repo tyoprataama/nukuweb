@@ -39,7 +39,7 @@ const items = [
 
 export const TableEl = () => {
   return (
-    <Table className="bg-gray-100 dark:bg-slate-800 text-foreground rounded-lg">
+    <Table className="bg-gray-200 dark:bg-slate-700 text-foreground rounded-lg">
       <TableCaption>List of happy customer.</TableCaption>
       <TableHeader>
         <TableRow>

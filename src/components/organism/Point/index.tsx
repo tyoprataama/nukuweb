@@ -1,6 +1,6 @@
 export const Point = () => {
   return (
-    <div className="flex gap-2 w-[500px] flex-col p-4  mt-2 mb-5 bg-slate-100 dark:bg-slate-800 dark:text-foreground rounded-lg">
+    <div className="bg-gray-200 dark:bg-slate-700 flex gap-2 w-[500px] flex-col p-4  mt-2 mb-5  dark:text-foreground rounded-lg">
       <p className="text-sm">
         <span className="font-semibold">Cara order</span> di nukuweb sangatlah
         mudah anda tinggal mengikuti langkah-langkah dibawah ini:
