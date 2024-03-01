@@ -15,13 +15,13 @@ export const serviceItem: indexProps[] = [
   },
   {
     key: 2,
-    imageItem: "service-2",
-    desc: "Web dan Pemrograman",
+    imageItem: "service-3",
+    desc: "Joki Tugas",
   },
   {
     key: 3,
-    imageItem: "service-3",
-    desc: "Joki Tugas",
+    imageItem: "service-2",
+    desc: "Web dan Pemrograman",
   },
   {
     key: 4,
