@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -100,6 +101,35 @@
 
 .welcome-code {
   background-image: url(../../public/welcomeCode.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+.service-1 {
+  background-image: url(../../public/service-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.service-2 {
+  background-image: url(../../public/service-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.service-3 {
+  background-image: url(../../public/service-3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.service-4 {
+  background-image: url(../../public/service-4.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

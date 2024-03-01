@@ -1,12 +1,14 @@
 import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import Footer from "@/components/layout/Footer";
 import { Separator } from "@/components/ui/separator";
 import { ThemeProvider } from "@/components/context";
 
-const inter = Inter({ subsets: ["latin"] });
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Nukuweb | Official Site",
@@ -20,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={plusJakartaSans.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

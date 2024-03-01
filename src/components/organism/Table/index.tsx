@@ -31,7 +31,7 @@ const items = [
   },
   {
     userImage: "https://i.ibb.co/yPSNr3G/review-user-4.png",
-    userName: "Lintang",
+    userName: "Lita",
     userRatings: "4.9",
     userReviews: "Cocok untuk membantu tugas kuliah saya.",
   },
@@ -55,7 +55,9 @@ export const TableEl = () => {
             <TableCell>
               <Avatar className="w-[50px] h-[50px]">
                 <AvatarImage src={item.userImage} />
-                <AvatarFallback className="bg-blue-200">V</AvatarFallback>
+                <AvatarFallback className="bg-blue-200">
+                  {item.userName.split("")[0].toUpperCase()}
+                </AvatarFallback>
               </Avatar>
             </TableCell>
             <TableCell>{item.userName}</TableCell>
